@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
 
@@ -34,20 +34,20 @@
 .fw-900 {
   font-weight: 900;
 }
-.fs-7{
+.fs-7 {
   font-size: 14px;
 }
 .text-faded {
   opacity: 0.6;
 }
-.text-light{
+.text-light {
   color: white;
 }
 a {
   text-decoration: none;
 }
 body {
-  background-color:rgb(24,1,104);
+  background-color: rgb(24, 1, 104);
   position: relative;
   background-image: url(./assets/images/full-bg.png);
   background-position: top;
@@ -71,17 +71,21 @@ body {
 .nav-link {
   font-weight: 500;
   font-size: 15px !important;
-  padding:15px !important;
+  padding: 15px !important;
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
-  color: #D2E6F2 !important;
-  background-image: linear-gradient(120deg,rgb(73,52,144),rgb(106,89,165));
-  border: 1px solid rgb(121,106,172);
+  color: #d2e6f2 !important;
+  background-image: linear-gradient(
+    120deg,
+    rgb(73, 52, 144),
+    rgb(106, 89, 165)
+  );
+  border: 1px solid rgb(121, 106, 172);
   border-radius: 7px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.nav-link:hover{
+.nav-link:hover {
   transform: scale(1.01);
   border-color: white;
 }
@@ -124,13 +128,13 @@ body {
   width: 18px;
 }
 @media (max-width: 991px) {
-  .navbar-collapse{
+  .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.575);
   }
-  .nav-link.active::after{
+  .nav-link.active::after {
     display: none;
   }
-  .nav-link{
+  .nav-link {
     padding-top: 15px !important;
   }
 }
@@ -240,7 +244,7 @@ body {
 }
 .card-1 img {
   position: absolute;
-  top: -80px;
+  top: -120px;
   width: 180px;
 }
 .loader2 {
@@ -272,32 +276,32 @@ body {
   animation: inout 1s infinite;
 }
 @keyframes inout {
-  0%{
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.2);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
-.btn-1{
+.btn-1 {
   position: relative;
 }
-.btn-1 button{
+.btn-1 button {
   border: none;
   font-size: 13px;
   background-color: transparent;
   padding: 10px 15px;
-  border-radius: 10px ;
+  border-radius: 10px;
   color: rgb(228, 228, 228);
   position: relative;
   overflow: hidden;
   z-index: 1;
   min-width: 150px;
 }
-.btn-1 button::after{
+.btn-1 button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -308,26 +312,26 @@ body {
   z-index: -1;
   filter: blur(20px);
 }
-.btn-1 img{
+.btn-1 img {
   position: absolute;
-  left:40%;
+  left: 40%;
   top: -20%;
   width: 25px;
 }
-.box-1{
+.box-1 {
   background-color: rgba(255, 255, 255, 0.103);
   border-radius: 10px;
 }
-h1{
+h1 {
   font-size: 60px;
 }
-@media (max-width:991px){
-  h1{
+@media (max-width: 991px) {
+  h1 {
     font-size: 35px;
   }
 }
-.g-box{
-  background-image: linear-gradient(90deg ,#5637CA,#1E45D7) ;
+.g-box {
+  background-image: linear-gradient(90deg, #5637ca, #1e45d7);
   width: 100px;
   height: 100px;
   border-radius: 14px;
@@ -338,7 +342,7 @@ h1{
   position: relative;
   font-size: 40px;
 }
-.g-box span{
+.g-box span {
   position: absolute;
   bottom: -10px;
   left: 7.5%;
@@ -351,70 +355,63 @@ h1{
   text-align: center;
   font-weight: 500;
 }
-.p-box{
+.p-box {
   text-align: center;
   width: 130px;
   font-size: 14px;
 }
-.odd-box{
+.odd-box {
   padding-top: 120px;
 }
-.scale{
+.scale {
   position: relative;
   background-color: rebeccapurple;
 }
-.scale img{
+.scale img {
   position: absolute;
   bottom: 64%;
   width: 30px;
   left: -16px;
 }
-@media (max-width:991px) {
-  .odd-box{
+@media (max-width: 991px) {
+  .odd-box {
     padding-top: 0px;
   }
 }
-.card{
+.card {
   border: none;
   overflow: hidden;
   border-radius: 10px;
   background-color: transparent;
 }
-.card-body{
-  background-color: #BF2A57;
+.card-body {
+  background-color: #bf2a57;
 }
-.card-title{
+.card-title {
   font-weight: 400;
-  font-size:18px !important;
+  font-size: 18px !important;
 }
-.img-1{
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  width: 70px;
-  opacity: .8;
-}
-.dotted{
+.dotted {
   border: 1px dashed #1e84d7;
   position: relative;
 }
-@media (max-width:991px) {
-  .dotted{
+@media (max-width: 991px) {
+  .dotted {
     overflow: hidden;
   }
 }
-.back{
+.back {
   position: absolute;
   width: 100px;
   z-index: -1;
   left: -50px;
   bottom: -30px;
 }
-.transparent{
- background-color: rgba(255, 255, 255, 0.185); 
- border-radius: 15px;
+.transparent {
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 15px;
 }
-.btn-1{
+.btn-1 {
   color: black;
   background-color: rgba(197, 155, 71, 0.685);
   border: none;
@@ -424,7 +421,7 @@ h1{
   border: 1px solid white;
   color: white;
 }
-.btn-2{
+.btn-2 {
   color: black;
   background-color: rgba(145, 54, 225, 0.658);
   border: none;
@@ -434,61 +431,109 @@ h1{
   border: 1px solid white;
   color: white;
 }
-.btn-outline-warning{
-  border: 2px solid rgb(255,195,1);
+.btn-outline-warning {
+  border: 2px solid rgb(255, 195, 1);
   border-radius: 10px;
   font-weight: 600;
   padding: 10px;
 }
-.btn-warning{
-  background-color: rgb(255,195,1);
+.btn-warning {
+  background-color: rgb(255, 195, 1);
   border-radius: 10px;
   font-weight: 600;
   padding: 10px;
   color: white;
 }
-.dot{
+.dot {
   display: flex;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #FEC200;
+  background-color: #fec200;
   border: 1px solid white;
 }
-.under-line{
+.under-line {
   width: 50%;
 }
-.footer-logo{
+.footer-logo {
   position: absolute;
   top: -50%;
 }
-iframe{
-    z-index: -1 !important;
+iframe {
+  z-index: -1 !important;
 }
-.faq__question{
-    background-color: rgba(255, 255, 255, 0.212) !important;
-    padding: 10px;
-    border-top-right-radius: 400px;
-    border-bottom-right-radius: 400px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.671) !important;
+.faq__question {
+  background-color: rgba(255, 255, 255, 0.212) !important;
+  padding: 10px;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.671) !important;
 }
-.faq__question h4{
-    margin-bottom: 0px !important;
-    font-size: 20px;
-    font-weight: 700 !important;
-    padding-left: 10px;
+.faq__question h4 {
+  margin-bottom: 0px !important;
+  font-size: 20px;
+  font-weight: 700 !important;
+  padding-left: 10px;
 }
-hr{
-    margin-top: 0px !important;
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
+hr {
+  margin-top: 0px !important;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
 }
-.footer-icons{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.103);
+.footer-icons {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.103);
 }
+/* copy css */
+.ws-card {
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.num {
+  /* background-color: rgba(145, 54, 225, 0.658); */
+  background-color: rgba(255, 255, 255, 0.185);
+  color: white;
+  font-weight: 500;
+  font-size: 50px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 15px;
+}
+.ws-card a{
+  background-color: #FFC302;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+.ws-card i{
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+@media (max-width:991px) {
+  .img-2 {
+    transform: translate(0px ,0px) !important;
+  }
+}
+
+.card-1 {
+  background-color: rgba(255, 255, 255, 0.267);
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  height: 200px;
+}
+/* copy css */

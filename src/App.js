@@ -5,9 +5,9 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { Header } from './components/header/Header';
 // import { Hero } from "./components/hero/Hero";
 import React, { useState, useEffect } from "react";
-// import { About } from "./components/about/About";
+import { About } from "./components/about/About";
 import { Benefits } from "./components/benefits/Benefits";
-// import { Roadmap } from "./components/roadmap/Roadmap";
+import { Roadmap } from "./components/roadmap/Roadmap";
 import { Team } from "./components/Team/Team";
 import { Faq } from "./components/faq/Faq";
 import { Footer } from "./components/footer/Footer";
@@ -209,12 +209,12 @@ function App() {
       </section>
       {/* new hero */}
 
+      <About/>
       <Benefits/>
 
-      {/* <About/> */}
-      {/* <Roadmap/> */}
-      {/* <Team /> */}
+      <Roadmap/>
       <Faq />
+      <Team />
       <Footer />
     </React.Fragment>
   );

@@ -1,91 +1,45 @@
-import React, { useEffect } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import './Team.css';
-import member1 from '../../assets/images/member-1.png';
-import member2 from '../../assets/images/member-2.png';
-import member3 from '../../assets/images/member-3.png';
-import member4 from '../../assets/images/member-4.png';
-import gsap from 'gsap';
+import Team1 from '../../assets/images/img-1.png'
+import Team2 from '../../assets/images/img-2.png'
+import Team3 from '../../assets/images/img-3.png'
 
 export const Team = () => {
 
-    useEffect(() => {
-        gsap.utils.toArray(".member__container").forEach(section => {
-            gsap.from(section.querySelectorAll('.team__member , .member__details , h2 , p'), {
-              scrollTrigger: section,
-              autoAlpha: 0,
-              opacity:0,
-              x:-500,
-              duration: 1.75,
-              stagger: 0.25,
-    
-            });
-  
-          });
-    },[window.screen.width])
 
     return (
-        <section className="team" id="team">
-            <Container>
-                <Row>
-                    <Col md={12}>
-                    <h2 className="uppercase h2">OUR TEAM</h2>
-                    </Col>
-                    <Col md={12}>
-                        <Row>
-                        <Col md={3} className="member__container" id="m1">
-                        <div className="team__member">
-                            <div className="member__image">
-                            <img src={member1} alt="" />
+        <>
+            <section id="team" class="background d-flex align-items-center flex-column justify-content-center" style={{minHeight:"100vh"}} >
+                <img src="assets/images/bg-8.webp" class="bg-1" loading="lazy"/>
+
+                    <div class="center-heading mb-5 ">OUR TEAM</div>
+                    <div class="row mx-0 justify-content-center">
+                    </div>
+                    <div class="container mt-lg-5 ">
+                        <div class="row  mx-0">
+                            <div class="col-lg-4 p-lg-4 pt-5 mt-5 p-3 col-12">
+                                <div class="card-1 d-flex flex-column align-items-center justify-content-end ">
+                                    <img  style={{borderRadius:"50%",Height:"180px"}} src={Team1} class="card-image" loading="lazy"/>
+                                        <span class="fw-600 fs-5 text-center">Tomato Cultivator @tomatocultivato</span>
+                                        <span class="fw-300 text-center p-4 pt-2 fs-7 pb-3"> PLATFORM DEVELOPMENT &amp; MANAGEMENT</span>
+                                </div>
                             </div>
-                            <div className="member__details">
-                                <h2>Ridie</h2>
-                                <p>Project Lead</p>
+                            <div class="col-lg-4 p-lg-4 pt-5 mt-5 p-3 col-12">
+                                <div class="card-1 d-flex flex-column align-items-center justify-content-end ">
+                                    <img  style={{borderRadius:"50%",Height:"180px"}} src={Team2} class="card-image" loading="lazy"/>
+                                        <span class="fw-600 fs-5 text-center">Tomato Cultivator @tomatocultivato</span>
+                                        <span class="fw-300 text-center p-4 pt-2 fs-7 pb-3"> PLATFORM DEVELOPMENT &amp; MANAGEMENT</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 p-lg-4 pt-5 mt-5 p-3 col-12">
+                                <div class="card-1 d-flex flex-column align-items-center justify-content-end ">
+                                    <img  style={{borderRadius:"50%",Height:"180px"}} src={Team3} class="card-image" loading="lazy"/>
+                                        <span class="fw-600 fs-5 text-center">Tomato Cultivator @tomatocultivato</span>
+                                        <span class="fw-300 text-center p-4 pt-2 fs-7 pb-3"> PLATFORM DEVELOPMENT &amp; MANAGEMENT</span>
+                                </div>
                             </div>
                         </div>
-                        </Col>
+                    </div>
 
-                        <Col md={3} className="member__container" id="m1">
-                        <div className="team__member">
-                            <div className="member__image">
-                            <img src={member2} alt="" />
-                            </div>
-                            <div className="member__details">
-                                <h2>Mobro</h2>
-                                <p>Marketing Genius</p>
-                            </div>
-                        </div>
-                        </Col>
-
-                        <Col md={3} className="member__container" id="m1">
-                        <div className="team__member">
-                            <div className="member__image">
-                            <img src={member3} alt="" />
-                            </div>
-                            <div className="member__details">
-                                <h2>Amitsa</h2>
-                                <p>Blockchain Developer</p>
-                            </div>
-                        </div>
-                        </Col>
-
-                        <Col md={3} className="member__container" id="m1">
-                        <div className="team__member">
-                            <div className="member__image">
-                            <img src={member4} alt="" />
-                            </div>
-                            <div className="member__details">
-                                <h2>Jamy</h2>
-                                <p>Social Media and Community Manager</p>
-                            </div>
-                        </div>
-                        </Col>
-
-                        
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+            </section>
+        </>
     )
 }
